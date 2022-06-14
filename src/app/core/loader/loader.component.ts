@@ -1,14 +1,13 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { delay } from 'rxjs';
-import { LoaderService } from './core/loader/loader.service';
+import { LoaderService } from './loader.service';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  selector: 'pro-glove-loader',
+  templateUrl: './loader.component.html',
+  styleUrls: ['./loader.component.scss']
 })
-export class AppComponent {
-  title = 'pro-glove';
+export class LoaderComponent implements OnInit {
   loading = false;
 
   constructor(

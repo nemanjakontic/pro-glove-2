@@ -1,0 +1,56 @@
+@import "../../../../style/abstracts/variables";
+
+.settings-section {
+  width: 90%;
+  margin: 10rem auto;
+  padding: 5rem;
+  border: 5px solid $primary;
+
+  button {
+    margin-top: 1rem;
+  }
+
+  .change-indicator {
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+    position: relative;
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+  }
+}
+
+.form {
+
+  &__file-input {
+    font-family: inherit;
+    color: rgba($secondary, 0.6);
+    font-style: italic;
+    padding: 1.5rem 2rem;
+    border-radius: 0.4rem;
+    background-color: $primary;
+    border: none;
+    border-bottom: 2px solid transparent;
+    // width: 100%;
+    // display: block;
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 0;
+  }
+
+  &__file-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    // width: 6rem;
+    background-color: $primary;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+  }
+}
